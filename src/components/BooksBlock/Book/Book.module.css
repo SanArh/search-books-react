@@ -1,0 +1,30 @@
+.book {
+    width: 250px;
+    background-color: rgb(232, 228, 228);
+    padding: 30px;
+    box-sizing: border-box;
+}
+.link {
+    text-decoration: none;
+    color: #000;
+}
+.title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.categories {
+    text-decoration: underline;
+    color: rgb(107, 104, 104);
+    font-size: 14px
+}
+.authors {
+    color: rgb(107, 104, 104);
+    font-size: 14px
+}
+.img {
+    box-shadow: 7px 7px 7px #888888;
+}
+.info {
+    margin-top: 30px;
+    text-align: left;
+}
