@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Search books
+приложение созданное с использованием React, Redux, Google Books API. Для запросов на сервер использовался axios.
+ссылка на на приложение: https://search-books-react1.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
