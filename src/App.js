@@ -9,7 +9,6 @@ import {
 import ContainerBookPage from './components/BookPage/ContainerBookPage';
 import Error from './components/Error/Error';
 
-
 function App({error}) {
   return (
     <div className={style.App}>

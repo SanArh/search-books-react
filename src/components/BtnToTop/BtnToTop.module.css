@@ -1,0 +1,8 @@
+.btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

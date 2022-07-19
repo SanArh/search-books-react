@@ -1,9 +1,22 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import BtnToTop from "../BtnToTop/BtnToTop";
 import Preloader from "../common/Preloader";
 import Book from "./Book/Book";
 import style from "./BooksBlock.module.css";
 
 const BooksBlock = (props) => {
+    const [scroll, setScroll] = useState();
+    const handleScroll = () => {
+        setScroll(window.scrollY);
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
     return (
         <div className={style.books_block}>
             <div>
@@ -25,6 +38,7 @@ const BooksBlock = (props) => {
                         disabled={props.isBtnDisabled}>Load more</button>}
             </div>
             {props.isFetchingMoreBooks && <Preloader />}
+            <BtnToTop scroll={scroll} />
         </div>
     )
 };
