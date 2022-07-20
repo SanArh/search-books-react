@@ -32,7 +32,7 @@ const Form = (props) => {
             <form onSubmit={handleSubmitForm}>
                 <div className={style.inputWrapper}>
                     <input className={style.input} type='search' value={input}
-                        onChange={onChangeInput} />
+                        onChange={onChangeInput} placeholder='enter your request' />
                     <button className={style.form_btn}>
                         <img className={style.searchIcon} src={SearchImage} alt='search' />
                     </button>

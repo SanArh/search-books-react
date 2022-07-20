@@ -4,5 +4,9 @@
     right: 5%;
     padding: 10px;
     border-radius: 5px;
+    border-color: #000000;
     cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8
 }

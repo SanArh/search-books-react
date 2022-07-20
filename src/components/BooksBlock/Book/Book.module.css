@@ -23,6 +23,10 @@
 }
 .img {
     box-shadow: 7px 7px 7px #888888;
+    transition: 0.2s;
+}
+.img:hover {
+    transform: scale(1.1);
 }
 .info {
     margin-top: 30px;
